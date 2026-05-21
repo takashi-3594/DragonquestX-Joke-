@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+
+
+/*スライドショー
+---------------------------------------------------------------------------*/
+/*３枚の画像の共通設定*/
+.slide {
+	width: 100%;height: 100%;
+	position: absolute;right: 0px;top: 0px;
+	display: flex;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 1s;	/*ここの1s（＝1秒）を変更すると、フェードのスピードを変更できます。*/
+}
+
+/*１枚目画像*/
+.slide1 {
+	background: url('../images/1.jpg') no-repeat center center / cover;	/*１枚目の背景画像の読み込み*/
+}
+
+/*２枚目画像*/
+.slide2 {
+	background: url('../images/2.jpg') no-repeat center center / cover;	/*２枚目の背景画像の読み込み*/
+}
+
+/*３枚目画像*/
+.slide3 {
+	background: url('../images/3.jpg') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
+}
+
+
+/*現在表示されているスライドのみをクリック可能にする設定（変更不要）
+---------------------------------------------------------------------------*/
+.slide {
+	pointer-events: none; /* デフォルトでクリックを無効にする */
+}
+
+.slide.active {
+	pointer-events: auto; /* 表示中のスライドのみクリックを有効にする */
+}
+
