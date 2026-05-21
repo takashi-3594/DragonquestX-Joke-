@@ -1,0 +1,161 @@
+
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0; }
+
+section {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0;
+  position: relative; }
+  section h1 {
+    text-align: center;
+    margin-bottom: 70px; }
+  section .hv-container {
+    flex-grow: 1;
+    overflow: auto;
+    justify-content: center; }
+
+.basic-style {
+  background-color: #000000; }
+  .basic-style > h1 {
+    color: #ac2222; }
+
+p.simple-card {
+  margin: 0;
+  background-color: #fff;
+  color: #DE5454;
+  padding: 30px;
+  border-radius: 7px;
+  min-width: 100px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(204, 131, 103, 0.22); }
+
+.hv-item-parent p {
+  font-weight: bold;
+  color: #DE5454; }
+
+.management-hierarchy {
+  background-color: #000000; }
+  .management-hierarchy > h1 {
+    color: #FFF; }
+  .management-hierarchy .person {
+    text-align: center; }
+    .management-hierarchy .person > img {
+      height: 110px;
+      border: 5px solid #FFF;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #fff; }
+    .management-hierarchy .person > p.name {
+      background-color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      font-weight: normal;
+      color: #c20000;
+      margin: 0;
+      position: relative; }
+      .management-hierarchy .person > p.name b {
+        color: rgba(242, 47, 47, 0.5); }
+      .management-hierarchy .person > p.name:before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 8px;
+        background-color: #fff;
+        left: 50%;
+        top: 0;
+        transform: translateY(-100%); }
+
+
+/* フッター2 */
+.footer-2 {
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 25px 10px 10px;
+    background-color: #0c0c0c;
+}
+
+.footer-2__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1.5em;
+    list-style-type: none;
+    margin: 0 0 .5em;
+    padding: .5em;
+}
+
+.footer-2__sns-icon {
+    width: 21px;
+    height: 21px;
+}
+.footer-2__address {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: .8em;
+}
+
+.footer-2__policy {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: .8em;
+}
+
+.footer-2__copyright {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: .8em;
+}
+
+/*リンクテキスト*/
+footer a {color: inherit;text-decoration: none;}
+
+/*著作部分*/
+footer .pr {display: block;}
+
+
+/*ロゴと連絡先*/
+img {
+  margin-bottom: 20px;
+  max-width: 95%;
+  height: auto;
+  display: block;
+  padding: 10px 0;
+  position: relative;
+}
+
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-size: 14px;
+}
+
+
+a {
+  display: inline-block;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
