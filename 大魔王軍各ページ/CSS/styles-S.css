@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+/*全体の設定*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック','Zen Kurenaido',sans-serif;
+}
+
+.mainvisual img{
+  width : 100%;
+  height: auto;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+/* カードレイアウト */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2em;
+}
+.card__item {
+  display: flex;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 8px groove #818181;
+  box-shadow: 5px 5px 5px 0px #979797;
+  max-width: 100%;
+}
+.card__item a {
+  padding: 1em 1.25em;
+  display: block;
+}
+.card__title {
+  font-size: 1.375rem;
+  margin-bottom: 0.5em;
+}
+.card__thumb {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 7 / 4;
+  border-radius: 4px;
+}
+.card__date {
+  font-size: 0.875rem;
+}
+.card__desc {
+  margin-top: 0.25em;
+}
+
+
+
+/* フッター2 */
+.footer-2 {
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 10px 10px;
+    background-color: #851bac;
+}
+
+.footer-2__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1.5em;
+    list-style-type: none;
+    margin: 0 0 .5em;
+    padding: .5em;
+}
+
+.footer-2__sns-icon {
+    width: 21px;
+    height: 21px;
+}
+
+.footer-2__address {
+  margin: 0;
+  color: #ffffffb3;
+  font-weight: 200;
+  font-size: .8em;
+}
+
+
+.footer-2__copyright {
+    margin: 0;
+    color: #ffffffb3;
+    font-weight: 200;
+    font-size: .8em;
+}
+
+body {
+  background: linear-gradient(0deg, #000 0%, #851bac 0%, #ffffff 99%);
+  margin: 0;
+  padding: 0;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  position: relative;
+  min-height: 20vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: #841bab;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 100;
+  margin-bottom: 0px;
+}
+
+.header h1 {
+    float: left;
+    margin: 0;
+    color: #000000;
+    font-family: "Slabo 27px", serif;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+	        
+.menu-toggle {
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: rgb(0, 0, 0);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  bottom: -8px;
+}
+
+.menu-toggle.active .hamburger {
+  background: transparent;
+}
+
+.menu-toggle.active .hamburger::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.menu-toggle.active .hamburger::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background: rgb(234, 183, 242);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 200;
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+}
+
+.side-menu.active {
+  left: 0;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e1e5e9;
+  background: rgb(234, 183, 242);
+}
+
+.menu-header h2 {
+  color: #333;
+  font-size: 18px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-list li {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.menu-list a {
+  display: block;
+  padding: 15px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.menu-list a:hover {
+  background: rgb(234, 183, 242);
+  color: #a410c5;
+}
+
+.main-content {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+/* メニューが開いている時の背景オーバーレイ */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 150;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*ロゴと連絡先*/
+img {
+  margin-bottom: 20px;
+  max-width: 95%;
+  height: auto;
+  display: block;
+  padding: 10px 0;
+  position: relative;
+}
+
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-size: 14px;
+}
+
+
+a {
+  display: inline-block;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #a410c5;
+}
+
+@media screen and (min-width: 760px) {
+  a:hover{text-decoration: underline;}
+  
+  .card {
+    flex-direction: row;
+  }
+  .card__item {
+    max-width: 360px;
+  }
+}

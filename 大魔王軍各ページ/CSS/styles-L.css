@@ -1,0 +1,164 @@
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.8;
+    color: #444;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+/* コンテナのデザイン */
+.privacy-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fcfcfc;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05); /* 薄い影でおしゃれに */
+}
+
+.terms-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fcfcfc;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05); /* 薄い影でおしゃれに */
+}
+
+
+/* タイトルとセクション */
+h1 {
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    color: #222;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    color: #222;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.updated {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 20px;
+    border-left: 4px solid #333; /* アクセントの線 */
+    padding-left: 15px;
+    margin-top: 40px;
+    color: #333;
+}
+
+h3 {
+    font-size: 20px;
+    padding-left: 15px;
+    margin-top: 40px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* フッター2 */
+.footer-2 {
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 10px 10px;
+    background-color: #ffffff;
+}
+
+.footer-2__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1.5em;
+    list-style-type: none;
+    margin: 0 0 .5em;
+    padding: .5em;
+}
+
+.footer-2__sns-icon {
+    width: 21px;
+    height: 21px;
+}
+
+.footer-2__address {
+  margin: 0;
+  color: #000000b3;
+  font-weight: 200;
+  font-size: .8em;
+}
+
+.footer-2__copyright {
+    margin: 0;
+    color: #000000b3;
+    font-weight: 200;
+    font-size: .8em;
+}
+
+.footer-2__privacy-policy {
+    margin: 0;
+    color: #000000b3;
+    font-weight: 200;
+    font-size: .8em;
+}
+
+
+/*ロゴと連絡先*/
+img {
+  margin-bottom: 20px;
+  max-width: 95%;
+  height: auto;
+  display: block;
+  align-self: center;
+  padding: 10px 0;
+  position: relative;
+}
+
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-size: 14px;
+}
+
+
+a {
+  display: inline-block;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #000000;
+}
+
+
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+    .privacy-container {
+        padding: 30px;
+        margin: 20px auto;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+}

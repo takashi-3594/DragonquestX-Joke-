@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/*全体の設定*/
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  text-align: center;
+}
+
+/*レイアウト*/
+body {background: #d7b4ea;}
+h1 {
+  font-size: 1.5em;
+  color: #d80a0a;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+form {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  background: #d8a9e6;
+  padding: 40px 0;
+}
+dl {
+  margin: 0 auto;
+  width: 500px;
+}
+.form-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+.form-item2 {
+  display: flex;
+  justify-content: center;  
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+
+dt {width: 200px;}
+dd {width: 300px;}
+input[type="text"], input[type="email"], select, textarea {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+}
+.form-submit {
+  text-align: center;
+}
+
+/*モバイル用CSS*/
+@media screen and (max-width:768px) {
+  form{padding: 20px 0;}
+  dl{width: 90%;}
+  .form-item{display: block;}
+  dt{width: 100%;}
+  dd{width: 100%;}
+  input[type="submit"] {padding: 1em;}
+}
+
+
+
+dt, dd, select, input, textarea {color: #666;}
+
+
+/*設問名にマークを追加*/
+dt::before {
+  content: "◆";
+  color:#ff0000;
+  padding-right: 6px;
+}
+
+/*入力欄の枠を設定*/
+input[type="text"], input[type="email"], select, textarea {
+  border:1px solid #000000;
+  background: #fcfcfc;
+  padding: 0.3em;
+}
+select {height: 2em;}
+
+/*ラジオボタン*/
+.label-radio {margin-right: 2em;}
+input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+/*テキストエリアの大きさ*/
+textarea {min-height: 100px;}
+
+/*同意チェックボックス*/
+input[type="checkbox"] {
+  margin-right: 4px;
+}
+
+/*送信ボタン*/
+input[type="button"] {
+  background: #a756c5;
+  width: 200px;
+  padding: 0.5em;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+/*PCのみ*/
+@media screen and (min-width:769px) {
+  input[type="submit"]:hover {
+      background: #147581;
+  }
+}

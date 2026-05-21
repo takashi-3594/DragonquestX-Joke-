@@ -1,0 +1,132 @@
+
+
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.8;
+    color: #444;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+.organization-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05); /* 薄い影でおしゃれに */
+}
+
+h2 {
+    font-size: 20px;
+    border-left: 4px solid #333; /* アクセントの線 */
+    padding-left: 15px;
+    margin-top: 40px;
+    color: #333;
+}
+
+.sitemap ul li ul {
+  margin-top: .5em;
+  margin-bottom: .75em;
+  margin-left: 48px;
+}
+ 
+.sitemap ul li ul li {
+  margin-bottom: .25em;
+  position: relative;
+}
+ 
+.sitemap ul li ul li::before {
+  content: "";
+  position: absolute;
+  top: -0.5em;
+  left: -16px;
+  width: 10px;
+  height: calc(100% + .75em);
+  border-left: 1px solid #3972b2;
+}
+ 
+.sitemap ul li ul li:last-child::before {
+  height: calc(1em + .25em);
+}
+ 
+.sitemap ul li ul li::after {
+  content: "";
+  position: absolute;
+  top: .75em;
+  left: -16px;
+  width: 10px;
+  border-bottom: 1px solid #3972b2;
+}
+
+ul {
+  list-style: none; /* 点を消す */
+  padding-left: 0;  /* 左の余白を詰める */
+}
+
+/* フッター2 */
+.footer-2 {
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 10px 10px;
+    background-color: #ffffff;
+}
+
+.footer-2__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1.5em;
+    list-style-type: none;
+    margin: 0 0 .5em;
+    padding: .5em;
+}
+
+.footer-2__sns-icon {
+    width: 21px;
+    height: 21px;
+}
+
+.footer-2__address {
+  margin: 0;
+  color: #000000b3;
+  font-weight: 200;
+  font-size: .8em;
+}
+
+.footer-2__copyright {
+    margin: 0;
+    color: #000000b3;
+    font-weight: 200;
+    font-size: .8em;
+}
+
+
+/*ロゴと連絡先*/
+img {
+  margin-bottom: 20px;
+  max-width: 95%;
+  height: auto;
+  display: block;
+  padding: 10px 0;
+  position: relative;
+}
+
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-size: 14px;
+}
+
+
+a {
+  display: inline-block;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #ffffff;
+}

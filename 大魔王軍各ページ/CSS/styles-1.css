@@ -1,0 +1,85 @@
+* {box-sizing: border-box;max-width: 100%;font-family: 'Gruppo','UD デジタル 教科書体 N', cursive;}
+
+html,body {height: 100%;margin: 0;padding: 0;background-image: url("../img/pokemon-backgraund.jpg");background-size: cover;background-position: center;}
+
+
+
+@media screen{
+  .bg-hero {
+    position: relative;
+  }
+  .bg-info {
+    padding: 32px;
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 120px;
+  }
+  .bg-hero h1 {
+    text-align: left;
+  }
+  .bg-hero p {
+    font-size: 1rem;
+  }
+}
+.bg-hero h1 {
+  text-align: center;
+  margin-bottom: 0.75em;
+  font-size: 2.125rem;
+}
+.bg-hero p {
+  line-height: 1.8;
+  font-size: 0.975rem;
+}
+.menu-icon {width: 50px;height: 50px;position: fixed;top: 0;right: 0;margin: 10px 15px;transform:scale(0.8);padding: 0;cursor: pointer;z-index:20}
+.menu-bar {width: 50px;height: 5px;background: rgb(255, 255, 255);position: absolute;transition: all 0.3s;}
+.menu-bar1 {margin-top: 9px}
+.menu-bar2 {margin-top: 23px}
+.menu-bar3 {margin-top: 37px}
+.menu-icon.hover .menu-bar1 {-webkit-transform: rotate(45deg) scaleX(0.7);transform: rotate(45deg) scaleX(0.7);margin-top: 22px;}
+.menu-icon.hover .menu-bar2 {opacity: 0}
+.menu-icon.hover .menu-bar3 {-webkit-transform: rotate(-45deg) scaleX(0.7);transform: rotate(-45deg) scaleX(0.7);margin-top: 22px;}
+
+.menu {width: 100%;height: 100%;display: -webkit-flex;display: flex;-webkit-flex-wrap: wrap;flex-wrap: wrap;}
+.menu-con {-webkit-flex-grow: 1;flex-basis: 0;flex-grow: 1;display: -webkit-flex;display: flex;-webkit-justify-content:space-around;justify-content:space-around;position:relative;top:-100%;transition:all 0.5s}
+.menu-con p:before {content: ""; display: block;position:absolute;top:0;left:0;z-index:1;width:100%;height: 100%;opacity: 1;background: rgba(0,0,0,0);-webkit-transition: all 0.5s;transition: all 0.5s;}
+.menu-con:hover p:before {background: rgba(0,0,0,0.2)}
+.menu-con p {height:20px;-webkit-align-self:center;align-self:center;color:white;font-size:25px;z-index:2;cursor:pointer}
+@media screen and (max-width: 600px) {.menu-con {min-width:50%}}
+@media screen and (max-width: 350px) {.menu-con {min-width:100%}}
+
+    #inputarea {
+        display:block;
+        width:400px;
+        font-size:32px;
+        line-height:1;
+        padding:10px 5px 5px 5px;
+        box-shadow:3px 3px 3px rgba(0, 0, 0, 0.1);
+        margin-left:40px;
+        margin-bottom:40px;
+        caret-color: transparent;   /* 点滅カーソルを非表示 */
+ 
+        border: 2px solid #ffffff;     /* 枠線 */
+        border-radius: 3px;
+        box-shadow:0 0 8px rgba(0,0,0,0.3);
+        margin-left:40px;
+        margin-bottom:40px;
+    }
+ 
+    /* after疑似要素 */
+    #inputarea:focus::after {
+        color:#ff0000;
+        content: "←";                 /* とりあえず←を指定。*/
+        animation: blink 1s infinite;   /* 点滅アニメーション呼び出し */
+    }
+    #inputarea:focus{
+        outline:solid 2px rgb(255, 255, 255);
+        border:none;
+    }
+    /* 点滅アニメーション */
+    @keyframes blink {
+    0% { opacity: 0;}
+    50% { opacity: 0;}
+    51% { opacity: 1;}
+    100% { opacity: 1;}
+    }

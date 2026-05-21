@@ -1,0 +1,11 @@
+*{font-size: 20px;}
+section p{color: brown;}
+li.hoshizora{color: blue;}
+li.tentai{color: gold;}
+h1{background-color: #26ff14;font-size:30px;}
+h2{background-color:#085baf;color:#fff;text-align:center;font-size:30px;}
+time{
+  display: block;
+  width: 200px;
+  border: solid 1px;
+}
